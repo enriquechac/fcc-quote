@@ -13,7 +13,7 @@ export const App = () => {
   }, [])
   
   const getQuote = async() => {
-    const {content, author} = await (await fetch('http://api.quotable.io/random')).json()
+    const {content, author} = await (await fetch('https://api.quotable.io/random')).json()
     setQuoteData({
       content,
       author
